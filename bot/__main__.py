@@ -19,6 +19,8 @@ from .devtools import *
 
 LOGS.info("Starting...")
 
+####L Add Users like dis########
+AUTH_USERS = [12234, 24335, 353246]
 
 ######## Connect ########
 
@@ -200,3 +202,6 @@ LOGS.info("Bot has started.")
 with bot:
     bot.loop.run_until_complete(something())
     bot.loop.run_forever()
+    
+######## DONT TOUCH ############
+
