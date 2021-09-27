@@ -39,8 +39,8 @@ async def encod(event):
         if not event.is_private:
             return
         event.sender
-        if str(event.sender_id) not in OWNER:
-            return
+        if event.sender_id not in AUTH_USERS:
+            return await event.reply("U are not authorised kid")
         if not event.media:
             return
         if hasattr(event.media, "document"):
